@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'employee_crud';
+
+  educationOptions =[
+    '10th pass',
+    'diploma',
+    'graduate',
+    'post graduate',
+    'phD',
+  ];
+
+  ngAfterViewInIt():void{
+    // this.buttontemp.nativeElement.click();
+  }
 }
