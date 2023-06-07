@@ -40,7 +40,7 @@
               <input type="text" class="form-control" placeholder="last name">
             </div>
           </div>
-
+          <br>
           <div class="row">
             <div class="col">
               <h6 class="text-secondary fst-italic">Personal Information</h6>
@@ -74,8 +74,31 @@
             <div class="col">
               <select class="form-select">
                 <option value="default" selected>Select your Education</option>
-                
+                <option *ngFor="let option of educationOptions; let i=index" value="{{i}}">
+                  {{option | titlecase}}
+                </option>
               </select>
+            </div>
+          </div>
+<br>
+          <div class="row">
+            <div class="col">
+              <h6 class="text-secondary fst-italic">Job Information</h6>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Compony Name">
+            </div>
+          </div>
+
+          <div class="row mt-5">
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Job Experience(yrs)">
+            </div>
+            <div class="col">
+              <input type="number" class="form-control" placeholder="Salary-LPA">
             </div>
           </div>
         </form>
