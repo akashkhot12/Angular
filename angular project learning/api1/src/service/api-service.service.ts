@@ -10,14 +10,9 @@ import { getApi } from 'src/environment/env';
 export class ApiServiceService {
   base_url=getApi.basicApi;
 
-  constructor( private http:HttpClient) { 
-    this.getJson().subscribe(data => {
-    console.log(data)
-  }
-    );
-}
+  constructor( private http:HttpClient) {}
 
-    public getJson():Observable<any>{
+     getJson():Observable<any>{
       return this.http.get(this.base_url)
     }
     

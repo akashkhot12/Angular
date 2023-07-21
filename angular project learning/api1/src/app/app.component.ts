@@ -10,9 +10,7 @@ export class AppComponent implements OnInit{
   data:any[]=[];
 
 
-  constructor(private ApiServiceService:ApiServiceService){
-
-  }
+  constructor(private ApiServiceService:ApiServiceService){}
 
   ngOnInit(): void {
   this.getAppJson()

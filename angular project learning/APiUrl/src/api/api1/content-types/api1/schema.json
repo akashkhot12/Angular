@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "api1s",
+  "info": {
+    "singularName": "api1",
+    "pluralName": "api1s",
+    "displayName": "api1"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}
