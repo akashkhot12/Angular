@@ -9,7 +9,6 @@ export class AppComponent implements OnInit{
   title = 'api1';
   data:any[]=[];
 
-
   constructor(private ApiServiceService:ApiServiceService){}
 
   ngOnInit(): void {
