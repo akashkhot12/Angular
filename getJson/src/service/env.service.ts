@@ -13,12 +13,12 @@ import { env } from 'src/environment/env';
 export class EnvService {
   base_url = env.Base_URL
 
-  // constructor( private http:HttpClient) { 
-  //   this.getJson().subscribe(data =>{
-  //     console.log(data);
+  constructor( private http:HttpClient) { 
+    this.getJson().subscribe(data =>{
+      console.log(data);
       
-  //   })
-  // }
+    })
+  }
 
   public getJson():Observable<any>{
     return this.http.get(this.base_url)
