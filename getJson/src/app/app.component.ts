@@ -10,11 +10,8 @@ export class AppComponent implements OnInit {
   title = 'getJson';
   data:any[]=[];
   
-constructor(private EnvService:EnvService ){
-
-}
+constructor(private EnvService:EnvService ){}
   
-
   ngOnInit():void{
     this.getAppJSon()
   }
